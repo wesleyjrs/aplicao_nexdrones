@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +10,20 @@
     <link rel="icon" type="imagem/png" href="imagens/drone.png">
 
 
-    <title>Cadastro de usuário</title>
-
+    <title>Minha conta</title>
+    
 </head>
+<body>
+    <?php include("nav_bar.php"); ?>
 
-<body id="fundo">
-
-    <div class="container">
+    <div class="container" style="margin-top:100px;margin-bottom:100px;">
+        
+        <div class="row">
+        <div class="container">
         <div class="row">
             <div id="form_cad" class="container">
-                <form action="inserir_usuario.php" method="post">
-                    <h3 class="txt_align" style="margin-bottom:15px;color:#fff;padding-bottom:20px;text-decoration:underline;">Cadastro de usuário</h3>
+                <form action="#" method="post">
+                    <h3 class="txt_align" style="margin-bottom:15px;color:#fff;padding-bottom:20px;text-decoration:underline;">Alterar Dados Pessoais</h3>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="nome" class="label">Nome</label>
@@ -119,7 +121,7 @@
                     </div>
 
                     <div class="form-group txt_align">
-                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        <button type="submit" class="btn btn-success">Alterar</button>
                     </div>
                     
                 </form>
@@ -127,17 +129,14 @@
         </div>
     </div>
 
-
-
-
+        </div>
+    </div>
+        
 
     <script src="bibliotecas/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
-
 </html>

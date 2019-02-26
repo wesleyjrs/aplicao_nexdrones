@@ -10,23 +10,11 @@
     <link rel="stylesheet" href="css/estilo_mobile.css">
     <link rel="icon" type="imagem/png" href="imagens/drone.png">
 
-    <title>Home | Nexdrones</title>
-
-    <style>
-    #home {
-        background: url('imagens/fundo_home.gif') center center no-repeat fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-
-
-    }
-    </style>
+    <title>Aplicações | Nexdrones</title>
 
 </head>
 
-<body id="home">
+<body>
     <?php include("nav_bar.php"); ?>
 
 

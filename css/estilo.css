@@ -3,6 +3,13 @@
     text-align: center;
 }
 
+.centro{
+  margin:0 auto;
+}
+body{
+  background: rgb(200, 200, 200);
+}
+
 
 /* ---------------------------- FINAL geral ---------------------*/
 
@@ -14,12 +21,15 @@
   height: 100vh; */
 }
 #login .container #login-row #login-column #login-box {
-  margin-top: 120px;
-  
+  margin-top: 20%;
   max-width: 600px;
-  height: 320px;
-  border: 1px solid #9C9C9C;
+  height: 100%;
+  border-radius:10px;
   background-color:rgba(000, 000, 000, 0.7);
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -ms-border-radius:10px;
+  -o-border-radius:10px;
 }
 #login .container #login-row #login-column #login-box #login-form {
   padding: 20px;
@@ -41,17 +51,25 @@
 }
 
 .label{
-  color: #1483c5;
+  color: #fff;
   font-weight: bold;
   font-size: 17px;
 }
 /*--------------------------FINAL pagina login de usuario---------------------------- */
 
+/*--------------------------pagina cadastro de usuario---------------------------- */
+
 #form_cad{
-    background: #fff;
+    background: rgba(0, 0, 0, 0.8);
     padding: 50px;
     border-radius: 10px;
     width: 60%;
-    margin-top: 30px;
+    margin-top: 20px;
     
 }
+
+.txt_form_cad:hover{
+  color:#fff;
+}
+
+/*--------------------------FINAL pagina cadastro de usuario---------------------------- */
