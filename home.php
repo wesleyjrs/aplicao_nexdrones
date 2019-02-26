@@ -15,8 +15,12 @@
     <?php include("nav_bar.php"); ?>
 
     
+<<<<<<< HEAD
     <h1>teste github</h1>
     <h2>teste 2</h2>
+=======
+    teste github daniel
+>>>>>>> e85090d8be9888898fa9e46dc441d176025dc8c5
 
 
     <script src="bibliotecas/bootstrap/js/bootstrap.min.js"></script>
