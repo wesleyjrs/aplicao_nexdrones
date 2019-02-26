@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="bibliotecas/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo_mobile.css">
 
     <title>Home</title>
     
@@ -14,7 +15,7 @@
     <?php include("nav_bar.php"); ?>
 
     
-
+    <h1>teste github</h1>
 
 
     <script src="bibliotecas/bootstrap/js/bootstrap.min.js"></script>

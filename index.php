@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="bibliotecas/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo_mobile.css">
+
     <title>Login do usuário</title>
     
 </head>
