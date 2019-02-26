@@ -7,7 +7,13 @@
   margin:0 auto;
 }
 body{
-  background: rgb(200, 200, 200);
+      background: url('../imagens/fundo_logo.gif') center center no-repeat fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+
 }
 
 
@@ -73,3 +79,14 @@ body{
 }
 
 /*--------------------------FINAL pagina cadastro de usuario---------------------------- */
+
+/*--------------------------pagina APLICAÇÃO de usuario---------------------------- */
+#cad_app{
+  background: rgba(0, 0, 0, 0.9);
+  padding: 50px;
+  border-radius: 10px;
+  width: 50%;
+  margin-top: 150px;
+  
+}
+/*--------------------------FINAL pagina APLICAÇÃO de usuario---------------------------- */

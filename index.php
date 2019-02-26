@@ -16,15 +16,15 @@
 </head>
 
 <style>
-    #teste  {
-  background: url('imagens/fundo_login.jpg') center center no-repeat fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+#teste {
+    background: url('imagens/fundo_login.jpg') center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
 
-    }
+}
 </style>
 
 <body id="teste">
@@ -47,32 +47,73 @@
                                 <input type="text" name="password" id="password" class="form-control"
                                     Placeholder="Digite sua senha">
                             </div>
-                            
+
 
 
                             <div class="row">
                                 <div class="col-md-6 txt_align">
                                     <a href="#" class="centro">
                                         <button type="button" class="btn btn-link txt_form_cad" id="esqueceu_senha"
+                                            data-toggle="modal" data-target="#exampleModalCenter"
                                             style="font-weight: 600;">
                                             Esqueceu sua senha?
                                         </button></a>
                                 </div>
                                 <div class="col-md-6 txt_align">
-                                <a href="cadastro_usuario.php">
-                                    <button type="button" class="btn btn-link txt_form_cad" style="font-weight: 600;">
-                                        Efetuar cadastro
-                                    </button>
-                                </a>
+                                    <a href="cadastro_usuario.php">
+                                        <button type="button" class="btn btn-link txt_form_cad"
+                                            style="font-weight: 600;">
+                                            Efetuar cadastro
+                                        </button>
+                                    </a>
 
 
-                            </div>
+                                </div>
 
-                            <div class="form-group centro">
-                                <input type="submit" name="submit" class="btn btn-primary btn-md" value="Entrar">
-                            </div>
+                                <div class="form-group centro">
+                                    <input type="submit" name="submit" class="btn btn-primary btn-md" value="Entrar">
+                                </div>
                         </form>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Esqueceu a senha?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="POST" enctype="multipart/form-data">
+                    <p style="background:rgba(20, 132, 197, 0.5);border-radius:10px;:center;padding:7px;">Sua nova senha foi enviada para o email informado. <br> Cheque sua caixa de spam.</p>
+                    <label >Informe seu email para receber um nova senha!</label><br>
+                        <div class="row">
+                            <div class="col-md-9">
+                               
+                                <input type="text" class="form-control" placeholder="Informe seu email" name="emailPf">
+                                <input type="hidden" name="acao" value="recuperarpf">
+                            </div>
+                            <div class="col-md-3 centro">
+                                <input type="submit" class="btn btn-primary" name="ok"
+                                    value="Enviar">
+                            </div>
+                        </div>
+                        <br>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>

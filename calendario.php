@@ -10,15 +10,20 @@
     <link rel="stylesheet" href="css/estilo_mobile.css">
     <link rel="icon" type="imagem/png" href="imagens/drone.png">
 
-    <title>Home | Nexdrones</title>
-
+    <title>Calendario | Nexdrones</title>
 
 </head>
 
 <body>
     <?php include("nav_bar.php"); ?>
 
-    
+    <div class="container">
+        <div class="row">
+            <div>
+                
+            </div>
+        </div>
+    </div>
 
 
     <script src="bibliotecas/bootstrap/js/bootstrap.min.js"></script>
