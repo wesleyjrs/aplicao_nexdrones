@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$username = "localhost";
+$username = "root"; //mudei para teste
 $password = "";
 $dbname = "projeto_web";
 

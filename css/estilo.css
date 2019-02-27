@@ -106,3 +106,17 @@ body{
   margin-top: 50px;
 }
 /*--------------------------FINAL pagina APLICAÇÃO de usuario---------------------------- */
+
+/*--------------------------FINAL pagina CALENDARIO de usuario---------------------------- */
+
+#body_calendario {
+  background: #fff;
+}
+
+#calendar {
+  width: 45%;
+  margin: 0 auto;
+  background: #c0c0c0;
+}
+/*--------------------------FINAL pagina CALENDARIO de usuario---------------------------- */
+
