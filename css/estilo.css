@@ -114,9 +114,15 @@ body{
 }
 
 #calendar {
+  padding: 20px;
   width: 45%;
   margin: 0 auto;
-  background: #c0c0c0;
+  background: url('../imagens/fundo_calendario.gif') center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 /*--------------------------FINAL pagina CALENDARIO de usuario---------------------------- */
 

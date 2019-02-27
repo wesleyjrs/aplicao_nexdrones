@@ -1,13 +1,23 @@
 <!DOCTYPE html >
   <head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <title>Using MySQL and PHP with Google Maps</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bibliotecas/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo_mobile.css">
+    <link rel="icon" type="imagem/png" href="imagens/drone.png">
+
+    <title>Rota | Nexdrones</title>
+
     <style>
-<span class="metadata-marker" style="display: none;" data-region_tag="css"></span>      /* Always set the map height explicitly to define the size of the div
+      /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 100%;
+        height: 80%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top:100px;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -18,12 +28,14 @@
     </style>
   </head>
 
-<html>
   <body>
-<span class="metadata-marker" style="display: none;" data-region_tag="html-body"></span>    <div id="map"></div>
+
+  <?php include("nav_bar.php"); ?>
+
+    <div id="map"></div>
 
     <script>
-<span class="metadata-marker" style="display: none;" data-region_tag="script-body"></span>      var customLabel = {
+      var customLabel = {
         restaurant: {
           label: 'R'
         },
@@ -34,17 +46,16 @@
 
         function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: new google.maps.LatLng(-33.863276, 151.207977),
-          zoom: 12
+          center: new google.maps.LatLng(-20.540732, -47.408391),
+          zoom: 9
         });
         var infoWindow = new google.maps.InfoWindow;
 
           // Change this depending on the name of your PHP or XML file
-          downloadUrl('https://storage.googleapis.com/mapsdevsite/json/mapmarkers2.xml', function(data) {
+          downloadUrl('resultado.php', function(data) {
             var xml = data.responseXML;
             var markers = xml.documentElement.getElementsByTagName('marker');
             Array.prototype.forEach.call(markers, function(markerElem) {
-              var id = markerElem.getAttribute('id');
               var name = markerElem.getAttribute('name');
               var address = markerElem.getAttribute('address');
               var type = markerElem.getAttribute('type');
@@ -95,8 +106,16 @@
 
       function doNothing() {}
     </script>
-    <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfYYEeexJpXuK5w-DXgWp5sEFp9xjPVgA">
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfYYEeexJpXuK5w-DXgWp5sEFp9xjPVgA&callback=initMap">
+    </script>
+    
+    <script src="bibliotecas/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
   </body>
 </html>
