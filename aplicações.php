@@ -10,6 +10,26 @@
     <link rel="stylesheet" href="css/estilo_mobile.css">
     <link rel="icon" type="imagem/png" href="imagens/drone.png">
 
+    <script>
+    function mostraFormAdicionar() {
+        document.getElementById('cad_app').style.display = "block";
+        document.getElementById('lista_app').style.display = "none";
+        document.getElementById('mapa_rotas').style.display = "none";
+    }
+
+    function mostraListagem() {
+        document.getElementById('lista_app').style.display = "block";
+        document.getElementById('cad_app').style.display = "none";
+        document.getElementById('mapa_rotas').style.display = "none";
+    }
+
+    function mostraMapa() {
+        document.getElementById('mapa_rotas').style.display = "block";
+        document.getElementById('lista_app').style.display = "none";
+        document.getElementById('cad_app').style.display = "none";
+    }
+    </script>
+
     <title>Aplicações | Nexdrones</title>
 
 </head>
@@ -18,9 +38,13 @@
     <?php include("nav_bar.php"); ?>
 
     <div class="container">
-        <div class="row">
-        <button type="button" class="btn btn-primary">teste</button>
-        <button type="button" class="btn btn-primary">Primary</button>
+        <div class="row" style="margin-top:100px;">
+            <div class="col-md-6 txt_align">
+                <button type="button" class="btn btn-dark" style="margin-top:10px" onclick="mostraFormAdicionar();">Adicionar aplicação</button>
+            </div>
+            <div class="col-md-6 txt_align">
+                <button type="button" class="btn btn-dark" style="margin-top:10px" onclick="mostraListagem();">Listar aplicações</button>
+            </div>
         </div>
         <div class="row">
             <div id="cad_app" class="container">
@@ -48,6 +72,43 @@
                     </div>
 
                 </form>
+            </div>
+
+
+        </div>
+        <div class="row" style="margin-top:50px;">
+            <div id="lista_app">
+                <table class="table table-striped table-dark table-responsive">
+                    <thead>
+                        <tr>
+                            <th scope="col">Data da aplicação</th>
+                            <th scope="col">Próxima aplicação</th>
+                            <th scope="col">Intervalo (em dias)</th>
+                            <th scope="col">Rota da aplicação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>27/02/2019</td>
+                            <td>06/03/2019</td>
+                            <td>7</td>
+                            <td> <a href="rotas.php"><button type="button" class="btn btn-light">ver rota</button></a></td> <!--  onclick="mostraMapa(); -->
+                        </tr>
+                        <tr>
+                            <td>27/02/2019</td>
+                            <td>13/03/2019</td>
+                            <td>14</td>
+                            <td><button type="button" class="btn btn-light">ver rota</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <div class="row" style="margin-top:50px;">
+            <div id="mapa_rotas">
+               mapa aki
+
             </div>
         </div>
     </div>
