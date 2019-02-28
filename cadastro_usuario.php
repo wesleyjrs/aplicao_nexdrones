@@ -20,8 +20,6 @@
         });
         
     </script>
-
-
     <title>Cadastro de usuário</title>
 
 </head>
