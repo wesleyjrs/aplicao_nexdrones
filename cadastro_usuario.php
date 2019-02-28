@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/estilo_mobile.css">
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/jquery/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link rel="icon" type="imagem/png" href="imagens/drone.png">
 
     <script>
@@ -129,6 +130,7 @@
 
                     <div class="form-group txt_align">
                         <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        <a name="erro" id="erro"></a>
                     </div>
                     
                 </form>
